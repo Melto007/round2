@@ -40,8 +40,8 @@ const MiddlePage = () => {
         labels: [],
         datasets: [
             {
-                label: 'Poll',
-                data: [3, 6],
+                label: 'out of 20',
+                data: [16],
                 backgroundColor: ['purple'],
                 borderColor: ['purple'],
                 circumference: 180,
@@ -67,110 +67,114 @@ const MiddlePage = () => {
             </div>
             <div className='w-full gap-2 h-[100vh] sm:flex'>
                 <div className='flex flex-col gap-4 sm:w-[50%]'>
-                    <Card>
-                        <CardHeader className='flex justify-between'>
-                            <div className='flex justify-center items-center gap-2'>
-                                <IoMdTime />
-                                <span className='font-bold text-sm'>Time Off</span>
-                            </div>
-                            <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
-                        </CardHeader>
-                        <Divider />
-                        <CardBody>
-                            <div className='flex justify-center items-center'>
-                                <div className='w-[48%]'>
-                                    <Doughnut
-                                        data={data}
-                                        options={options}
-                                    >
-                                    </Doughnut>
-                                </div>
-                            </div>
-                            <Divider />
-                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
+                    <div>
+                        <Card>
+                            <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
-                                    <IoIosTime className='text-red' />
-                                    <p className='text-sm'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
+                                    <IoMdTime />
+                                    <span className='font-bold text-sm'>Time Off</span>
                                 </div>
-                                <h2 className='text-xs bg-amber px-2 rounded-full text-black'>Pending</h2>
-                            </div>
+                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                            </CardHeader>
                             <Divider />
-                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
-                                <div className='flex justify-center items-center gap-2'>
-                                    <FaCheckCircle className='text-lime' />
-                                    <p className='text-sm'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
+                            <CardBody>
+                                <div className='flex justify-center'>
+                                    <div className='w-[50%]'>
+                                        <Doughnut
+                                            data={data}
+                                            options={options}
+                                        >
+                                        </Doughnut>
+                                    </div>
                                 </div>
-                                <h2 className='text-xs bg-green px-2 rounded-full text-black'>Confirmed</h2>
-                            </div>
+                                <Divider />
+                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                    <div className='flex justify-center items-center gap-2'>
+                                        <IoIosTime className='text-red' />
+                                        <p className='text-sm'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
+                                    </div>
+                                    <h2 className='text-xs bg-amber px-2 rounded-full text-black'>Pending</h2>
+                                </div>
+                                <Divider />
+                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                    <div className='flex justify-center items-center gap-2'>
+                                        <FaCheckCircle className='text-lime' />
+                                        <p className='text-sm'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
+                                    </div>
+                                    <h2 className='text-xs bg-green px-2 rounded-full text-black'>Confirmed</h2>
+                                </div>
+                                <Divider />
+                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                    <div className='flex justify-center items-center gap-2'>
+                                        <IoMdCloseCircle className='text-red' />
+                                        <p className='text-sm'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
+                                    </div>
+                                    <h2 className='text-xs bg-rose px-2 rounded-full text-black'>Confirmed</h2>
+                                </div>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div>
+                        <Card>
+                            <CardHeader className='flex justify-between'>
+                                <div className='flex justify-center items-center gap-2'>
+                                    <MdComputer />
+                                    <span className='font-bold text-sm'>Status Tracker</span>
+                                </div>
+                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                            </CardHeader>
                             <Divider />
-                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
-                                <div className='flex justify-center items-center gap-2'>
-                                    <IoMdCloseCircle className='text-red' />
-                                    <p className='text-sm'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
-                                </div>
-                                <h2 className='text-xs bg-rose px-2 rounded-full text-black'>Confirmed</h2>
-                            </div>
-                        </CardBody>
-                    </Card>
-                    <Card>
-                        <CardHeader className='flex justify-between'>
-                            <div className='flex justify-center items-center gap-2'>
-                                <MdComputer />
-                                <span className='font-bold text-sm'>Status Tracker</span>
-                            </div>
-                            <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
-                        </CardHeader>
-                        <Divider />
-                        <CardBody>
-                            <h2 className='font-bold text-gray2 text-sm py-2'>Absent</h2>
-                            <div className='flex justify-between items-center'>
-                                <UserComponents
-                                    name="James Brown"
-                                    content="Replaced by Laura Peraz"
-                                />
-                                <div className='flex items-center justify-between gap-1 bg-gray4 text-sm px-2 py-1 rounded-md font-bold'>
-                                    <p><FaMinusCircle /></p>
-                                    <span className='text-xs'>Absent</span>
-                                </div>
-                            </div>
-                        </CardBody>
-                        <Divider />
-                        <CardBody>
-                            <h2 className='font-bold text-gray2 text-sm pb-2'>Away</h2>
-                            <div className='flex flex-col gap-4 text-xs'>
+                            <CardBody>
+                                <h2 className='font-bold text-gray2 text-sm py-2'>Absent</h2>
                                 <div className='flex justify-between items-center'>
                                     <UserComponents
                                         name="James Brown"
                                         content="Replaced by Laura Peraz"
                                     />
-                                    <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                        <p><IoIosTime /></p>
-                                        <span className='text-xs'>25m</span>
+                                    <div className='flex items-center justify-between gap-1 bg-gray4 text-sm px-2 py-1 rounded-md font-bold'>
+                                        <p><FaMinusCircle /></p>
+                                        <span className='text-xs'>Absent</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center'>
-                                    <UserComponents
-                                        name="James Brown"
-                                        content="Replaced by Laura Peraz"
-                                    />
-                                    <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                        <p><IoIosTime /></p>
-                                        <span className='text-xs'>12m</span>
+                            </CardBody>
+                            <Divider />
+                            <CardBody>
+                                <h2 className='font-bold text-gray2 text-sm pb-2'>Away</h2>
+                                <div className='flex flex-col gap-4 text-xs'>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="James Brown"
+                                            content="Replaced by Laura Peraz"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>25m</span>
+                                        </div>
+                                    </div>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="James Brown"
+                                            content="Replaced by Laura Peraz"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>12m</span>
+                                        </div>
+                                    </div>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="James Brown"
+                                            content="Replaced by Laura Peraz"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>8m</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center'>
-                                    <UserComponents
-                                        name="James Brown"
-                                        content="Replaced by Laura Peraz"
-                                    />
-                                    <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                        <p><IoIosTime /></p>
-                                        <span className='text-xs'>8m</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </div>
                 </div>
                 <div className='sm:w-[50%]'>
                     <div>
