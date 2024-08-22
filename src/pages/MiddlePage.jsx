@@ -6,7 +6,6 @@ import {
     Card,
     CardBody,
     CardHeader,
-    CardFooter,
     AvatarGroup,
     Avatar,
     Button,
@@ -19,7 +18,41 @@ import { RiFlashlightLine } from "react-icons/ri"
 import { CiCalendar } from "react-icons/ci";
 import { FaRegNoteSticky } from "react-icons/fa6";
 
+import {
+    Chart as ChartJS,
+    ArcElement,
+    Tooltip,
+    Legend
+} from 'chart.js'
+
+import {
+    Doughnut
+} from 'react-chartjs-2'
+
+ChartJS.register(
+    ArcElement,
+    Tooltip,
+    Legend
+)
+
 const MiddlePage = () => {
+    const data = {
+        labels: [],
+        datasets: [
+            {
+                label: 'Poll',
+                data: [3, 6],
+                backgroundColor: ['purple'],
+                borderColor: ['purple'],
+                circumference: 180,
+                rotation: 270
+            }
+        ]
+    }
+
+    const options = {
+
+    }
     return (
         <div>
             <div className="flex items-center justify-between w-full">
@@ -44,10 +77,16 @@ const MiddlePage = () => {
                         </CardHeader>
                         <Divider />
                         <CardBody>
-                            {/* <div>
-                                chartjs
+                            <div className='flex justify-center items-center'>
+                                <div className='w-[50%]'>
+                                    <Doughnut
+                                        data={data}
+                                        options={options}
+                                    >
+                                    </Doughnut>
+                                </div>
                             </div>
-                            <Divider className='my-1' /> */}
+                            <Divider />
                             <div className='flex justify-between items-center font-bold py-2 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoIosTime className='text-red' />
@@ -55,7 +94,7 @@ const MiddlePage = () => {
                                 </div>
                                 <h2 className='text-xs bg-amber px-2 py-1 rounded-full text-black'>Pending</h2>
                             </div>
-                            <Divider className='my-1' />
+                            <Divider />
                             <div className='flex justify-between items-center font-bold py-2 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <FaCheckCircle className='text-lime' />
@@ -63,7 +102,7 @@ const MiddlePage = () => {
                                 </div>
                                 <h2 className='text-xs bg-green px-2 py-1 rounded-full text-black'>Confirmed</h2>
                             </div>
-                            <Divider className='my-1' />
+                            <Divider />
                             <div className='flex justify-between items-center font-bold py-2 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoMdCloseCircle className='text-red' />
