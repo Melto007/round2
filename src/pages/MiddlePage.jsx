@@ -78,7 +78,7 @@ const MiddlePage = () => {
                         <Divider />
                         <CardBody>
                             <div className='flex justify-center items-center'>
-                                <div className='w-[50%]'>
+                                <div className='w-[48%]'>
                                     <Doughnut
                                         data={data}
                                         options={options}
@@ -87,28 +87,28 @@ const MiddlePage = () => {
                                 </div>
                             </div>
                             <Divider />
-                            <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoIosTime className='text-red' />
                                     <p className='text-sm'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
                                 </div>
-                                <h2 className='text-xs bg-amber px-2 py-1 rounded-full text-black'>Pending</h2>
+                                <h2 className='text-xs bg-amber px-2 rounded-full text-black'>Pending</h2>
                             </div>
                             <Divider />
-                            <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <FaCheckCircle className='text-lime' />
                                     <p className='text-sm'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
                                 </div>
-                                <h2 className='text-xs bg-green px-2 py-1 rounded-full text-black'>Confirmed</h2>
+                                <h2 className='text-xs bg-green px-2 rounded-full text-black'>Confirmed</h2>
                             </div>
                             <Divider />
-                            <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                            <div className='flex justify-between items-center font-bold py-1 text-xs'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoMdCloseCircle className='text-red' />
                                     <p className='text-sm'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
                                 </div>
-                                <h2 className='text-xs bg-rose px-2 py-1 rounded-full text-black'>Confirmed</h2>
+                                <h2 className='text-xs bg-rose px-2 rounded-full text-black'>Confirmed</h2>
                             </div>
                         </CardBody>
                     </Card>
@@ -184,7 +184,7 @@ const MiddlePage = () => {
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <div className='mb-2'>
+                                <div className='mb-1'>
                                     <h2 className='font-bold text-gray2 text-sm pb-2'>Project Name</h2>
                                     <div className='flex items-center text-sm gap-2 font-bold'>
                                         <div className='flex items-center gap-1'>
