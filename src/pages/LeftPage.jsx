@@ -23,7 +23,7 @@ const LeftPage = () => {
             id: 1,
             icon: <MdOutlineDashboard />,
             content: 'Dashboard',
-            class: 'active'
+            class: true
         },
         {
             id: 2,
@@ -73,14 +73,14 @@ const LeftPage = () => {
         },
         {
             id: 2,
-            name: 'Synergy Team',
+            name: 'Monday Redesign',
             icon: <BsDot />,
             count: 2,
             color: 'text-purple'
         },
         {
             id: 3,
-            name: 'Synergy Team',
+            name: 'Udemy Courses',
             icon: <BsDot />,
             count: 3,
             color: 'text-pink'
@@ -105,9 +105,9 @@ const LeftPage = () => {
                     <h1 className='text-gray2 font-bold uppercase text-xs px-2 py-1'>Main</h1>
                     {mainMenu.map((item, index)=> (
                         <a href='/' key={index}>
-                            <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-bold text-sm ${item.class === 'active' && 'bg-gray3'}`}>
+                            <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-semibold text-gray text-sm ${item.class && 'text-black bg-gray3'}`}>
                                 <div className='flex items-center justify-center gap-2'>
-                                    <span className={`${item.class === 'active' && 'text-purple'}`}>{item.icon}</span>
+                                    <span className={`${item.class && 'text-purple'}`}>{item.icon}</span>
                                     <h2>{item.content}</h2>
                                 </div>
                                 <MdNavigateNext />
@@ -119,7 +119,7 @@ const LeftPage = () => {
                     <h1 className='text-gray2 font-bold uppercase text-xs px-2'>Favorites</h1>
                     {favMenu.map((item, index) => (
                         <a href='/' key={index}>
-                            <div className='flex justify-between items-center py-1 rounded-lg font-bold text-md'>
+                            <div className='flex justify-between items-center py-1 rounded-lg font-bold text-gray text-md'>
                                 <div className='flex items-center justify-center'>
                                     <span className={`text-4xl p-0 ${item.color}`}>{item.icon}</span>
                                     <h6 className='text-sm'>{item.name}</h6>
@@ -138,11 +138,11 @@ const LeftPage = () => {
                 <div className='flex flex-col gap-4'>
                     <div className='flex gap-2 items-center'>
                         <CiSettings />
-                        <span className='font-bold'>Settings</span>
+                        <span className='font-bold text-sm text-gray'>Settings</span>
                     </div>
                     <div className='flex gap-2 items-center'>
                         <FcSupport />
-                        <span className='font-bold'>Support</span>
+                        <span className='font-bold text-sm text-gray'>Support</span>
                     </div>
                 </div>
                 <Divider className='my-2'/>

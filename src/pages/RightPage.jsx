@@ -34,22 +34,22 @@ const RightPage = () => {
                     <CardHeader className='flex justify-between items-center'>
                         <div className="flex justify-center items-center gap-2">
                             <FaCalendarCheck />
-                            <span className="font-bold">Schedule</span>
+                            <span className="font-semibold">Schedule</span>
                         </div>
                         <div className='right-heading'>
-                            <Button size="sm" variant="ghost" color="default">See All</Button>
+                            <Button size="sm" variant="ghost" color="default" className='font-semibold'>See All</Button>
                         </div>
                     </CardHeader>
                     <CardBody>
                         <div className='mb-1 flex flex-col gap-3'>
-                            <div className='flex justify-between items-center'>
+                            <div className='flex justify-between items-center bg-gray4 rounded-md'>
                                 <Button
                                     className='bg-white border-1 border-gray2 rounded-full'
                                     isIconOnly
                                     size="sm"
                                     startContent={<MdOutlineKeyboardArrowLeft className='text-2xl' />}
                                 ></Button>
-                                <p className='font-bold'>Aug 2023</p>
+                                <p className='font-semibold text-sm'>Aug, 2023</p>
                                 <Button
                                     className='bg-white border-1 border-gray2 rounded-full'
                                     isIconOnly
@@ -64,25 +64,25 @@ const RightPage = () => {
                                     size="sm"
                                     startContent={<MdOutlineKeyboardArrowLeft className='text-2xl' />}
                                 ></Button>
-                                <div className='flex justify-between items-center gap-6 text-sm'>
+                                <div className='flex justify-between items-center gap-6'>
                                     <div className='flex justify-center items-center font-bold flex-col'>
-                                        <p>Fri</p>
+                                        <p className="font-bold text-gray2 text-xs">Fri</p>
                                         <span>31</span>
                                     </div>
                                     <div className='flex justify-center items-center font-bold flex-col'>
-                                        <p>Sat</p>
+                                        <p className="font-bold text-gray2 text-xs">Sat</p>
                                         <span>01</span>
                                     </div>
                                     <div className='flex justify-center items-center font-bold flex-col bg-purple text-white px-2 py-1 rounded-lg'>
-                                        <p>Sun</p>
+                                        <p className="font-bold text-white text-xs">Sun</p>
                                         <span>02</span>
                                     </div>
                                     <div className='flex justify-center items-center font-bold flex-col'>
-                                        <p>Mon</p>
+                                        <p className="font-bold text-gray2 text-xs">Mon</p>
                                         <span>03</span>
                                     </div>
                                     <div className='flex justify-center items-center font-bold flex-col'>
-                                        <p>Tue</p>
+                                        <p className="font-bold text-gray2 text-xs">Tue</p>
                                         <span>04</span>
                                     </div>
                                 </div>
@@ -120,16 +120,16 @@ const RightPage = () => {
                                             time="8:00 to 8:45 (UTC)"
                                             content="On Google Meet"
                                             button="Marketing"
-                                            color1="red2"
-                                            color2="red3"
+                                            color1="from-red2"
+                                            color2="to-red3"
                                         />
                                         <Cards
                                             name="Meeting with Laura"
                                             time="8:00 to 8:45 (UTC)"
                                             content="On Zoom"
                                             button="Product Manager"
-                                            color1="green"
-                                            color2="green2"
+                                            color1="from-green"
+                                            color2="to-green2"
                                         />
                                     </div>
                                 </Tab>

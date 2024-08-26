@@ -13,10 +13,10 @@ import { RiArrowDropDownLine } from "react-icons/ri"
 const Cards = (props) => {
     return (
         <div>
-            <Card className={`w-full bg-gradient-to-b from-${props.color1} to-${props.color2} p-0 m-o`}>
+            <Card className={`w-full bg-gradient-to-b ${props.color1} ${props.color2} p-0 m-o`}>
                 <CardHeader className='flex justify-between items-center p-4'>
                     <div>
-                        <h1 className='font-bold text-sm'>{props.name}</h1>
+                        <h1 className='font-semibold text-sm'>{props.name}</h1>
                         <p className='font-bold text-xs text-gray'>{props.time}</p>
                     </div>
                     <Button
@@ -27,7 +27,7 @@ const Cards = (props) => {
                     />
                 </CardHeader>
                 <CardBody className='p-4'>
-                    <AvatarGroup isBordered max={3} size='md'>
+                    <AvatarGroup isBordered max={3} size='sm'>
                         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
                         <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
                         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
@@ -37,7 +37,7 @@ const Cards = (props) => {
                     </AvatarGroup>
                 </CardBody>
                 <CardFooter className='flex justify-between items-center p-4'>
-                    <p className='text-sm font-bold'>{props.content}</p>
+                    <p className='text-sm font-semibold'>{props.content}</p>
                     <Button
                         size="sm"
                         className='bg-transparent border-1 border-black rounded-full text-black font-bold'

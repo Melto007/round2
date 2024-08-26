@@ -72,44 +72,45 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoMdTime />
-                                    <span className='font-bold text-sm'>Time Off</span>
+                                    <span className='font-bold text-md'>Time Off</span>
                                 </div>
                                 <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <div className='flex justify-center'>
-                                    <div className='w-[50%]'>
-                                        <Doughnut
-                                            data={data}
-                                            options={options}
-                                        >
-                                        </Doughnut>
+                                <div className="circle-container">
+                                    <div className="semi-item">
+                                        <div className="semi-total" style={{ "--total": 80, "--fill": '#7e22ce' }}>
+                                            16
+                                        </div>
+                                        <div className="semi-mark">
+                                            <h3>Out of 20</h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <Divider />
-                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                <Divider className='my-2' />
+                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
                                     <div className='flex justify-center items-center gap-2'>
                                         <IoIosTime className='text-red' />
-                                        <p className='text-sm'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
+                                        <p className='text-sm text-gray'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
                                     </div>
-                                    <h2 className='text-xs bg-amber px-2 rounded-full text-black'>Pending</h2>
+                                    <h2 className='text-xs bg-amber px-2 rounded-full font-semibold text-gray'>Pending</h2>
                                 </div>
                                 <Divider />
-                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
                                     <div className='flex justify-center items-center gap-2'>
                                         <FaCheckCircle className='text-lime' />
-                                        <p className='text-sm'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
+                                        <p className='text-sm text-gray'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
                                     </div>
-                                    <h2 className='text-xs bg-green px-2 rounded-full text-black'>Confirmed</h2>
+                                    <h2 className='text-xs bg-green px-2 rounded-full font-semibold text-gray'>Confirmed</h2>
                                 </div>
                                 <Divider />
-                                <div className='flex justify-between items-center font-bold py-2 text-xs'>
+                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
                                     <div className='flex justify-center items-center gap-2'>
                                         <IoMdCloseCircle className='text-red' />
-                                        <p className='text-sm'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
+                                        <p className='text-sm text-gray'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
                                     </div>
-                                    <h2 className='text-xs bg-rose px-2 rounded-full text-black'>Confirmed</h2>
+                                    <h2 className='text-xs bg-rose px-2 rounded-full font-semibold text-gray'>Confirmed</h2>
                                 </div>
                             </CardBody>
                         </Card>
@@ -119,13 +120,13 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <MdComputer />
-                                    <span className='font-bold text-sm'>Status Tracker</span>
+                                    <span className='font-bold text-md'>Status Tracker</span>
                                 </div>
                                 <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <h2 className='font-bold text-gray2 text-sm py-2'>Absent</h2>
+                                <h2 className='font-bold text-gray2 text-xs py-2'>Absent</h2>
                                 <div className='flex justify-between items-center'>
                                     <UserComponents
                                         name="James Brown"
@@ -139,12 +140,12 @@ const MiddlePage = () => {
                             </CardBody>
                             <Divider />
                             <CardBody>
-                                <h2 className='font-bold text-gray2 text-sm pb-2'>Away</h2>
+                                <h2 className='font-bold text-gray2 text-xs pb-2'>Away</h2>
                                 <div className='flex flex-col gap-4 text-xs'>
                                     <div className='flex justify-between items-center'>
                                         <UserComponents
-                                            name="James Brown"
-                                            content="Replaced by Laura Peraz"
+                                            name="Arthur Taylor"
+                                            content="Synergy"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
@@ -153,8 +154,8 @@ const MiddlePage = () => {
                                     </div>
                                     <div className='flex justify-between items-center'>
                                         <UserComponents
-                                            name="James Brown"
-                                            content="Replaced by Laura Peraz"
+                                            name="Shopia Williams"
+                                            content="Apex"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
@@ -163,8 +164,8 @@ const MiddlePage = () => {
                                     </div>
                                     <div className='flex justify-between items-center'>
                                         <UserComponents
-                                            name="James Brown"
-                                            content="Replaced by Laura Peraz"
+                                            name="Emma Wright"
+                                            content="Pulse"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
@@ -182,41 +183,41 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <RiFlashlightLine />
-                                    <span className='font-bold text-sm'>Current Project</span>
+                                    <span className='font-bold text-md'>Current Project</span>
                                 </div>
                                 <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
                             </CardHeader>
                             <Divider />
                             <CardBody>
                                 <div className='mb-1'>
-                                    <h2 className='font-bold text-gray2 text-sm pb-2'>Project Name</h2>
+                                    <h2 className='font-bold text-gray2 text-xs pb-2'>Project Name</h2>
                                     <div className='flex items-center text-sm gap-2 font-bold'>
                                         <div className='flex items-center gap-1'>
                                             <MdAutoGraph />
-                                            <p>Monday App Design</p>
+                                            <p className="font-semibold">Monday App Design</p>
                                         </div>
                                         <div className='flex justify-center items-center bg-red3 px-2 py-1 rounded-full'>
                                             <IoIosTime />
-                                            <p className='text-gray text-xs'>In Progress</p>
+                                            <p className='text-gray text-xs font-semibold'>In Progress</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
                                     <div>
-                                        <h2 className='font-bold text-gray2 text-sm pb-2'>Project Manager</h2>
+                                        <h2 className='font-bold text-gray2 text-xs pb-2'>Project Manager</h2>
                                             <UserComponents
                                                 name="Laura P."
                                             />
                                     </div>
                                     <div>
-                                        <h2 className='font-bold text-gray2 text-sm pb-2'>Design Lead</h2>
+                                        <h2 className='font-bold text-gray2 text-xs pb-2'>Design Lead</h2>
                                         <UserComponents
                                             name="Arthur G."
                                         />
                                     </div>
                                 </div>
                                 <div className='my-2'>
-                                    <h2 className='font-bold text-gray2 text-sm pb-2'>Team</h2>
+                                    <h2 className='font-bold text-gray2 text-xs pb-2'>Team</h2>
                                     <AvatarGroup isBordered max={8} total={2} size='sm'>
                                         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
                                         <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
@@ -227,17 +228,17 @@ const MiddlePage = () => {
                                     </AvatarGroup>
                                 </div>
                                 <div className='my-2'>
-                                    <h2 className='font-bold text-gray2 text-sm pb-2'>Timeline</h2>
+                                    <h2 className='font-bold text-gray2 text-xs pb-2'>Timeline</h2>
                                     <div className='flex items-center gap-2'>
                                         <CiCalendar />
-                                        <p className='font-bold text-sm'>12/10/2022 - 01/04/2023</p>
+                                        <p className='font-semibold text-sm'>12/10/2022 - 01/04/2023</p>
                                     </div>
                                 </div>
                                 <div className='my-2'>
-                                    <h2 className='font-bold text-gray2 text-sm pb-2'>Description</h2>
+                                    <h2 className='font-bold text-gray2 text-xs pb-2'>Description</h2>
                                     <div className='flex items-center gap-2'>
                                         <FaPencilAlt />
-                                        <p className='font-bold text-sm'>Mobile and desktop app design</p>
+                                        <p className='font-semibold text-sm'>Mobile and desktop app design</p>
                                     </div>
                                 </div>
                             </CardBody>
@@ -248,7 +249,7 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <FaRegNoteSticky />
-                                    <span className='font-bold text-sm'>Notes</span>
+                                    <span className='font-bold text-md'>Notes</span>
                                 </div>
                                 <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
                             </CardHeader>
@@ -258,18 +259,18 @@ const MiddlePage = () => {
                                     <div className='flex items-center text-sm gap-2'>
                                         <FaCheckCircle className='text-lime text-xl' />
                                         <div>
-                                            <p className='font-bold text-sm'>Text Inputs for Design System</p>
-                                            <p className='text-gray text-xs font-bold'>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p className='font-semibold text-sm'>Text Inputs for Design System</p>
+                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
                                         </div>
                                     </div>
                                     <div className='flex justify-between items-center px-6 py-2'>
                                         <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>To-do</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
                                         </div>
                                         <div className='flex items-center gap-1'>
                                             <CiCalendar />
-                                            <p className='text-gray text-xs'>Aug 02</p>
+                                            <p className='text-gray font-semibold text-xs'>Aug 02</p>
                                         </div>
                                     </div>
                                 </div>
@@ -278,18 +279,18 @@ const MiddlePage = () => {
                                     <div className='flex items-center text-sm gap-2'>
                                         <FaCheckCircle className='text-lime text-xl' />
                                         <div>
-                                            <p className='font-bold text-sm'>Meeting with Authur Taylor</p>
-                                            <p className='text-gray text-xs font-bold'>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p className='font-semibold text-sm'>Meeting with Authur Taylor</p>
+                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
                                         </div>
                                     </div>
                                     <div className='flex justify-between items-center px-6 py-2'>
                                         <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>To-do</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
                                         </div>
                                         <div className='flex items-center gap-1'>
                                             <CiCalendar />
-                                            <p className='text-gray text-xs'>Aug 02</p>
+                                            <p className='text-gray text-xs font-semibold'>Aug 02</p>
                                         </div>
                                     </div>
                                 </div>
@@ -298,18 +299,18 @@ const MiddlePage = () => {
                                     <div className='flex items-center text-sm gap-2'>
                                         <FaCheckCircle className='text-lime text-xl' />
                                         <div>
-                                            <p className='font-bold text-sm'>Check Natural and State color</p>
-                                            <p className='text-gray text-xs font-bold'>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p className='font-semibold text-sm'>Check Natural and State color</p>
+                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
                                         </div>
                                     </div>
                                     <div className='flex justify-between items-center px-6 py-2'>
                                         <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 rounded-full'>To-do</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
+                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
                                         </div>
                                         <div className='flex items-center gap-1'>
                                             <CiCalendar />
-                                            <p className='text-gray text-xs'>Aug 02</p>
+                                            <p className='text-gray text-xs font-semibold'>Aug 02</p>
                                         </div>
                                     </div>
                                 </div>
