@@ -28,6 +28,10 @@ import {
 import {
     Doughnut
 } from 'react-chartjs-2'
+import SpanComponents from '../components/SpanComponents'
+import ButtonComponents from '../components/ButtonComponents'
+import TimeOffComponents from '../components/TimeOffComponents'
+import NotesComponents from '../components/NotesComponents'
 
 ChartJS.register(
     ArcElement,
@@ -72,9 +76,13 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <IoMdTime />
-                                    <span className='font-bold text-md'>Time Off</span>
+                                    <SpanComponents
+                                        content='Time Off'
+                                    />
                                 </div>
-                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                                <ButtonComponents
+                                    content="See All"
+                                />
                             </CardHeader>
                             <Divider />
                             <CardBody>
@@ -89,29 +97,29 @@ const MiddlePage = () => {
                                     </div>
                                 </div>
                                 <Divider className='my-2' />
-                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
-                                    <div className='flex justify-center items-center gap-2'>
-                                        <IoIosTime className='text-red' />
-                                        <p className='text-sm text-gray'>Aug 11, 2023 <span className='text-gray2 text-xs'>(Sick)</span></p>
-                                    </div>
-                                    <h2 className='text-xs bg-amber px-2 rounded-full font-semibold text-gray'>Pending</h2>
-                                </div>
+                                <TimeOffComponents
+                                    icons={<IoIosTime className='text-red' />}
+                                    date="Aug 11, 2023"
+                                    content="(Sick)"
+                                    heading="Pending"
+                                    color="bg-amber"
+                                />
                                 <Divider />
-                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
-                                    <div className='flex justify-center items-center gap-2'>
-                                        <FaCheckCircle className='text-lime' />
-                                        <p className='text-sm text-gray'>Jun 15, 2023 <span className='text-gray2 text-xs'>(Annual)</span></p>
-                                    </div>
-                                    <h2 className='text-xs bg-green px-2 rounded-full font-semibold text-gray'>Confirmed</h2>
-                                </div>
+                                <TimeOffComponents
+                                    icons={<FaCheckCircle className='text-lime' />}
+                                    date="Jun 15, 2023"
+                                    content="(Annual)"
+                                    heading="Confirmed"
+                                    color="bg-green"
+                                />
                                 <Divider />
-                                <div className='flex justify-between items-center font-bold py-3 text-xs'>
-                                    <div className='flex justify-center items-center gap-2'>
-                                        <IoMdCloseCircle className='text-red' />
-                                        <p className='text-sm text-gray'>Jun 24, 2023 <span className='text-gray2 text-xs'>(Casual)</span></p>
-                                    </div>
-                                    <h2 className='text-xs bg-rose px-2 rounded-full font-semibold text-gray'>Confirmed</h2>
-                                </div>
+                                <TimeOffComponents
+                                    icons={<IoMdCloseCircle className='text-red' />}
+                                    date="Jun 24, 2023"
+                                    content="(Casual)"
+                                    heading="Rejected"
+                                    color="bg-red3"
+                                />
                             </CardBody>
                         </Card>
                     </div>
@@ -120,9 +128,13 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <MdComputer />
-                                    <span className='font-bold text-md'>Status Tracker</span>
+                                    <SpanComponents
+                                        content='Status Tracker'
+                                    />
                                 </div>
-                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                                <ButtonComponents
+                                    content="See All"
+                                />
                             </CardHeader>
                             <Divider />
                             <CardBody>
@@ -183,9 +195,13 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <RiFlashlightLine />
-                                    <span className='font-bold text-md'>Current Project</span>
+                                    <SpanComponents
+                                        content='Current Project'
+                                    />
                                 </div>
-                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                                <ButtonComponents
+                                    content="See All"
+                                />
                             </CardHeader>
                             <Divider />
                             <CardBody>
@@ -249,71 +265,45 @@ const MiddlePage = () => {
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
                                     <FaRegNoteSticky />
-                                    <span className='font-bold text-md'>Notes</span>
+                                    <SpanComponents
+                                        content='Notes'
+                                    />
                                 </div>
-                                <Button size="sm" className='bg-white border-1 border-gray2 font-bold'>See All</Button>
+                                <ButtonComponents
+                                    content="See All"
+                                />
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <div className='mb-2'>
-                                    <div className='flex items-center text-sm gap-2'>
-                                        <FaCheckCircle className='text-lime text-xl' />
-                                        <div>
-                                            <p className='font-semibold text-sm'>Text Inputs for Design System</p>
-                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
-                                        </div>
-                                    </div>
-                                    <div className='flex justify-between items-center px-6 py-2'>
-                                        <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
-                                        </div>
-                                        <div className='flex items-center gap-1'>
-                                            <CiCalendar />
-                                            <p className='text-gray font-semibold text-xs'>Aug 02</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <NotesComponents
+                                    title="Text Inputs for Design System"
+                                    content="Lorem ipsum dolor sit amet consectetur"
+                                    day="Today"
+                                    todo="To-do"
+                                    date="Aug 02"
+                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    calendarIcon={<CiCalendar />}
+                                />
                                 <Divider />
-                                <div className='mb-2'>
-                                    <div className='flex items-center text-sm gap-2'>
-                                        <FaCheckCircle className='text-lime text-xl' />
-                                        <div>
-                                            <p className='font-semibold text-sm'>Meeting with Authur Taylor</p>
-                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
-                                        </div>
-                                    </div>
-                                    <div className='flex justify-between items-center px-6 py-2'>
-                                        <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
-                                        </div>
-                                        <div className='flex items-center gap-1'>
-                                            <CiCalendar />
-                                            <p className='text-gray text-xs font-semibold'>Aug 02</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <NotesComponents
+                                    title="Meeting with Authur Taylor"
+                                    content="Lorem ipsum dolor sit amet consectetur"
+                                    day="Today"
+                                    todo="To-do"
+                                    date="Aug 02"
+                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    calendarIcon={<CiCalendar />}
+                                />
                                 <Divider />
-                                <div className='mb-2'>
-                                    <div className='flex items-center text-sm gap-2'>
-                                        <FaCheckCircle className='text-lime text-xl' />
-                                        <div>
-                                            <p className='font-semibold text-sm'>Check Natural and State color</p>
-                                            <p className='text-gray text-xs font-semibold'>Lorem ipsum dolor sit amet consectetur</p>
-                                        </div>
-                                    </div>
-                                    <div className='flex justify-between items-center px-6 py-2'>
-                                        <div className='flex items-center gap-1'>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>Today</p>
-                                            <p className='text-black text-xs bg-red3 px-2 py-1 font-semibold rounded-full'>To-do</p>
-                                        </div>
-                                        <div className='flex items-center gap-1'>
-                                            <CiCalendar />
-                                            <p className='text-gray text-xs font-semibold'>Aug 02</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <NotesComponents
+                                    title="Check Natural and State color"
+                                    content="Lorem ipsum dolor sit amet consectetur"
+                                    day="Today"
+                                    todo="To-do"
+                                    date="Aug 02"
+                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    calendarIcon={<CiCalendar />}
+                                />
                             </CardBody>
                         </Card>
                     </div>

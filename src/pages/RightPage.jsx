@@ -19,7 +19,7 @@ import {
 import { CiSearch } from "react-icons/ci";
 import { TiMessages } from "react-icons/ti"
 import { MdHolidayVillage, MdOutlineKeyboardArrowLeft, MdKeyboardArrowRight  } from "react-icons/md"
-import { RiArrowDropDownLine } from "react-icons/ri"
+import SpanComponents from '../components/SpanComponents';
 import Cards from '../components/Cards'
 
 const RightPage = () => {
@@ -34,7 +34,9 @@ const RightPage = () => {
                     <CardHeader className='flex justify-between items-center'>
                         <div className="flex justify-center items-center gap-2">
                             <FaCalendarCheck />
-                            <span className="font-semibold">Schedule</span>
+                            <SpanComponents
+                                content='Schedule'
+                            />
                         </div>
                         <div className='right-heading'>
                             <Button size="sm" variant="ghost" color="default" className='font-semibold'>See All</Button>

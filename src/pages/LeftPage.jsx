@@ -23,42 +23,49 @@ const LeftPage = () => {
             id: 1,
             icon: <MdOutlineDashboard />,
             content: 'Dashboard',
-            class: true
+            class: 'text-black bg-gray3'
         },
         {
             id: 2,
             icon: <CiCalendar />,
-            content: 'Calendar'
+            content: 'Calendar',
+            class: 'text-gray'
         },
         {
             id: 3,
             icon: <MdOutlineTimer />,
-            content: 'Time Off'
+            content: 'Time Off',
+            class: 'text-gray'
         },
         {
             id: 4,
             icon: <GoProjectSymlink />,
-            content: 'Projects'
+            content: 'Projects',
+            class: 'text-gray'
         },
         {
             id: 5,
             icon: <FaUsers />,
-            content: 'Team'
+            content: 'Team',
+            class: 'text-gray'
         },
         {
             id: 6,
             icon: <GrNotes />,
-            content: 'Notes'
+            content: 'Notes',
+            class: 'text-gray'
         },
         {
             id: 7,
             icon: <FaRegFaceGrinStars />,
-            content: 'Benefits'
+            content: 'Benefits',
+            class: 'text-gray'
         },
         {
             id: 8,
             icon: <IoDocumentSharp />,
-            content: 'Documents'
+            content: 'Documents',
+            class: 'text-gray'
         }
     ]
 
@@ -105,7 +112,7 @@ const LeftPage = () => {
                     <h1 className='text-gray2 font-bold uppercase text-xs px-2 py-1'>Main</h1>
                     {mainMenu.map((item, index)=> (
                         <a href='/' key={index}>
-                            <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-semibold text-gray text-sm ${item.class && 'text-black bg-gray3'}`}>
+                            <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-semibold text-sm ${item.class}`}>
                                 <div className='flex items-center justify-center gap-2'>
                                     <span className={`${item.class && 'text-purple'}`}>{item.icon}</span>
                                     <h2>{item.content}</h2>
