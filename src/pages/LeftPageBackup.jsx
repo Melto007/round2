@@ -108,42 +108,40 @@ const LeftPage = () => {
                 <Divider className='my-2'/>
 
                 {/* Main  */}
-                <div className='h-[78vh]'>
-                    <div className='flex flex-col gap-2'>
-                        <h1 className='text-gray2 font-bold uppercase text-xs px-2 py-1'>Main</h1>
-                        {mainMenu.map((item, index)=> (
-                            <a href='/' key={index}>
-                                <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-semibold text-sm ${item.class}`}>
-                                    <div className='flex items-center justify-center gap-2'>
-                                        <span className={`${item.class && 'text-purple'}`}>{item.icon}</span>
-                                        <h2>{item.content}</h2>
-                                    </div>
-                                    <MdNavigateNext />
+                <div className='flex flex-col gap-2'>
+                    <h1 className='text-gray2 font-bold uppercase text-xs px-2 py-1'>Main</h1>
+                    {mainMenu.map((item, index)=> (
+                        <a href='/' key={index}>
+                            <div className={`flex justify-between items-center px-2 py-1 rounded-lg font-semibold text-sm ${item.class}`}>
+                                <div className='flex items-center justify-center gap-2'>
+                                    <span className={`${item.class && 'text-purple'}`}>{item.icon}</span>
+                                    <h2>{item.content}</h2>
                                 </div>
-                            </a>
-                        ))}
-                    </div>
-                    <div className='mt-4'>
-                        <h1 className='text-gray2 font-bold uppercase text-xs px-2'>Favorites</h1>
-                        {favMenu.map((item, index) => (
-                            <a href='/' key={index}>
-                                <div className='flex justify-between items-center py-1 rounded-lg font-bold text-gray text-md'>
-                                    <div className='flex items-center justify-center'>
-                                        <span className={`text-4xl p-0 ${item.color}`}>{item.icon}</span>
-                                        <h6 className='text-sm'>{item.name}</h6>
-                                    </div>
-                                    <button className='border-1 border-gray px-2 py-1 rounded-lg text-xs'>
-                                        {item.count}
-                                    </button>
+                                <MdNavigateNext />
+                            </div>
+                        </a>
+                    ))}
+                </div>
+                <div className='mt-4'>
+                    <h1 className='text-gray2 font-bold uppercase text-xs px-2'>Favorites</h1>
+                    {favMenu.map((item, index) => (
+                        <a href='/' key={index}>
+                            <div className='flex justify-between items-center py-1 rounded-lg font-bold text-gray text-md'>
+                                <div className='flex items-center justify-center'>
+                                    <span className={`text-4xl p-0 ${item.color}`}>{item.icon}</span>
+                                    <h6 className='text-sm'>{item.name}</h6>
                                 </div>
-                            </a>
-                        ))}
-                    </div>
+                                <button className='border-1 border-gray px-2 py-1 rounded-lg text-xs'>
+                                    {item.count}
+                                </button>
+                            </div>
+                        </a>
+                    ))}
                 </div>
             </div>
 
             {/* Footer */}
-            <div className='flex-1  flex flex-col gap-3 justify-between'>
+            <div className='flex-1 mt-8 flex flex-col gap-3 justify-between'>
                 <div className='flex flex-col gap-4'>
                     <div className='flex gap-2 items-center'>
                         <CiSettings />
