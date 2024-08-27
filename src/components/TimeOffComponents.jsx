@@ -7,7 +7,7 @@ const TimeOffComponents = (props) => {
                 {props.icons}
                 <p className='text-sm text-gray'>{props.date} <span className='text-gray2 text-xs'>{props.content}</span></p>
             </div>
-            <h2 className={`text-xs px-2 rounded-full font-semibold text-gray ${props.color}`}>{props.heading}</h2>
+            <h2 className={`text-xs px-2 py-1 rounded-full font-semibold text-gray ${props.color}`}>{props.heading}</h2>
         </div>
     )
 }

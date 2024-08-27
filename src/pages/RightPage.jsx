@@ -25,7 +25,7 @@ import Cards from '../components/Cards'
 const RightPage = () => {
     return (
         <div className='h-[100vh] flex flex-col gap-2'>
-            <div className='flex justify-between items-center gap-2'>
+            <div className='flex justify-between items-center gap-2 mb-1'>
                 <Button startContent={<FaCalendarCheck />} className='bg-white border-1 border-gray'>Schedule</Button>
                 <Button startContent={<FaPlus />} className='bg-purple text-white'>Create a Request</Button>
             </div>
@@ -133,6 +133,14 @@ const RightPage = () => {
                                             color1="from-green"
                                             color2="to-green2"
                                         />
+                                        <Cards
+                                            name="Meeting with Arthur Taylor"
+                                            time="8:00 to 8:45 (UTC)"
+                                            content="On Stack"
+                                            button="Partnership"
+                                            color1="from-purple2"
+                                            color2="to-purple3"
+                                        />
                                     </div>
                                 </Tab>
                                 <Tab
@@ -150,16 +158,24 @@ const RightPage = () => {
                                                 time="8:00 to 8:45 (UTC)"
                                                 content="On Google Meet"
                                                 button="Marketing"
-                                                color1="red2"
-                                                color2="red3"
+                                                color1="from-red2"
+                                                color2="to-red3"
                                             />
                                             <Cards
                                                 name="Meeting with Laura"
                                                 time="8:00 to 8:45 (UTC)"
                                                 content="On Zoom"
                                                 button="Product Manager"
-                                                color1="green"
-                                                color2="green2"
+                                                color1="from-green"
+                                                color2="to-green2"
+                                            />
+                                            <Cards
+                                                name="Meeting with Arthur Taylor"
+                                                time="8:00 to 8:45 (UTC)"
+                                                content="On Stack"
+                                                button="Partnership"
+                                                color1="from-purple2"
+                                                color2="to-purple3"
                                             />
                                         </div>
                                     </div>
@@ -179,16 +195,24 @@ const RightPage = () => {
                                                 time="8:00 to 8:45 (UTC)"
                                                 content="On Google Meet"
                                                 button="Marketing"
-                                                color1="red2"
-                                                color2="red3"
+                                                color1="from-red2"
+                                                color2="to-red3"
                                             />
                                             <Cards
                                                 name="Meeting with Laura"
                                                 time="8:00 to 8:45 (UTC)"
                                                 content="On Zoom"
                                                 button="Product Manager"
-                                                color1="green"
-                                                color2="green2"
+                                                color1="from-green"
+                                                color2="to-green2"
+                                            />
+                                            <Cards
+                                                name="Meeting with Arthur Taylor"
+                                                time="8:00 to 8:45 (UTC)"
+                                                content="On Stack"
+                                                button="Partnership"
+                                                color1="from-purple2"
+                                                color2="to-purple3"
                                             />
                                         </div>
                                     </div>

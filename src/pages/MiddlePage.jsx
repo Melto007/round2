@@ -9,6 +9,8 @@ import {
     AvatarGroup,
     Avatar,
     Button,
+    User,
+    Link,
     Divider
 } from '@nextui-org/react'
 import { IoMdTime, IoIosTime, IoMdCloseCircle  } from "react-icons/io"
@@ -59,7 +61,7 @@ const MiddlePage = () => {
     }
     return (
         <div>
-            <div className="flex items-center justify-between w-full">
+            <div className="flex items-center justify-between w-full mb-1">
                 <UserComponents
                     name="Melto.SM"
                     content="Welcome back to Synergy"
@@ -69,9 +71,9 @@ const MiddlePage = () => {
                     <IoIosNotifications />
                 </div>
             </div>
-            <div className='w-full gap-2 h-[100vh] sm:flex'>
+            <div className='w-full gap-4 h-[100vh] sm:flex'>
                 <div className='flex flex-col gap-4 sm:w-[50%]'>
-                    <div>
+                    <div className='mb-1'>
                         <Card>
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
@@ -86,7 +88,7 @@ const MiddlePage = () => {
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <div className="circle-container">
+                                <div className="circle-container mb-3">
                                     <div className="semi-item">
                                         <div className="semi-total" style={{ "--total": 80, "--fill": '#7e22ce' }}>
                                             16
@@ -118,7 +120,7 @@ const MiddlePage = () => {
                                     date="Jun 24, 2023"
                                     content="(Casual)"
                                     heading="Rejected"
-                                    color="bg-red3"
+                                    color="bg-red2"
                                 />
                             </CardBody>
                         </Card>
@@ -138,7 +140,7 @@ const MiddlePage = () => {
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <h2 className='font-bold text-gray2 text-xs py-2'>Absent</h2>
+                                <h2 className='font-bold text-gray2 text-xs py-1'>Absent</h2>
                                 <div className='flex justify-between items-center'>
                                     <UserComponents
                                         name="James Brown"
@@ -190,7 +192,7 @@ const MiddlePage = () => {
                     </div>
                 </div>
                 <div className='sm:w-[50%]'>
-                    <div>
+                    <div className='mb-5'>
                         <Card>
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
@@ -212,7 +214,7 @@ const MiddlePage = () => {
                                             <MdAutoGraph />
                                             <p className="font-semibold">Monday App Design</p>
                                         </div>
-                                        <div className='flex justify-center items-center bg-red3 px-2 py-1 rounded-full'>
+                                        <div className='flex justify-center items-center bg-orange2 px-2 py-1 rounded-full'>
                                             <IoIosTime />
                                             <p className='text-gray text-xs font-semibold'>In Progress</p>
                                         </div>
@@ -221,15 +223,17 @@ const MiddlePage = () => {
                                 <div className='flex justify-between items-center'>
                                     <div>
                                         <h2 className='font-bold text-gray2 text-xs pb-2'>Project Manager</h2>
-                                            <UserComponents
-                                                name="Laura P."
-                                            />
+                                            <div className='flex justify-center items-center gap-2'>
+                                                <Avatar src="https://avatars.githubusercontent.com/u/30373425?v=4" className="w-6 h-6 text-tiny"  />
+                                                <p className='font-semibold text-sm'>Laura P.</p>
+                                            </div>
                                     </div>
                                     <div>
                                         <h2 className='font-bold text-gray2 text-xs pb-2'>Design Lead</h2>
-                                        <UserComponents
-                                            name="Arthur G."
-                                        />
+                                            <div className='flex justify-center items-center gap-2'>
+                                                <Avatar src="https://avatars.githubusercontent.com/u/30373425?v=4" className="w-6 h-6 text-tiny"  />
+                                                <p className='font-semibold text-sm'>Arthur G.</p>
+                                            </div>
                                     </div>
                                 </div>
                                 <div className='my-2'>
@@ -243,14 +247,14 @@ const MiddlePage = () => {
                                         <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
                                     </AvatarGroup>
                                 </div>
-                                <div className='my-2'>
-                                    <h2 className='font-bold text-gray2 text-xs pb-2'>Timeline</h2>
+                                <div className='my-1'>
+                                    <h2 className='font-bold text-gray2 text-xs'>Timeline</h2>
                                     <div className='flex items-center gap-2'>
                                         <CiCalendar />
                                         <p className='font-semibold text-sm'>12/10/2022 - 01/04/2023</p>
                                     </div>
                                 </div>
-                                <div className='my-2'>
+                                <div className='my-1'>
                                     <h2 className='font-bold text-gray2 text-xs pb-2'>Description</h2>
                                     <div className='flex items-center gap-2'>
                                         <FaPencilAlt />
