@@ -71,9 +71,9 @@ const MiddlePage = () => {
                     <IoIosNotifications />
                 </div>
             </div>
-            <div className='w-full gap-4 h-[100vh] sm:flex'>
-                <div className='flex flex-col gap-4 sm:w-[50%]'>
-                    <div className='mb-1'>
+            <div className='w-full h-[100vh] flex flex-col gap-4 '>
+                <div className='flex flex-col justify-between items-center sm:flex-row gap-4'>
+                    <div className='w-[100%] sm:w-[50%]'>
                         <Card>
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
@@ -125,74 +125,7 @@ const MiddlePage = () => {
                             </CardBody>
                         </Card>
                     </div>
-                    <div>
-                        <Card>
-                            <CardHeader className='flex justify-between'>
-                                <div className='flex justify-center items-center gap-2'>
-                                    <MdComputer />
-                                    <SpanComponents
-                                        content='Status Tracker'
-                                    />
-                                </div>
-                                <ButtonComponents
-                                    content="See All"
-                                />
-                            </CardHeader>
-                            <Divider />
-                            <CardBody>
-                                <h2 className='font-bold text-gray2 text-xs py-1'>Absent</h2>
-                                <div className='flex justify-between items-center'>
-                                    <UserComponents
-                                        name="James Brown"
-                                        content="Replaced by Laura Peraz"
-                                    />
-                                    <div className='flex items-center justify-between gap-1 bg-gray4 text-sm px-2 py-1 rounded-md font-bold'>
-                                        <p><FaMinusCircle /></p>
-                                        <span className='text-xs'>Absent</span>
-                                    </div>
-                                </div>
-                            </CardBody>
-                            <Divider />
-                            <CardBody>
-                                <h2 className='font-bold text-gray2 text-xs pb-2'>Away</h2>
-                                <div className='flex flex-col gap-4 text-xs'>
-                                    <div className='flex justify-between items-center'>
-                                        <UserComponents
-                                            name="Arthur Taylor"
-                                            content="Synergy"
-                                        />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                            <p><IoIosTime /></p>
-                                            <span className='text-xs'>25m</span>
-                                        </div>
-                                    </div>
-                                    <div className='flex justify-between items-center'>
-                                        <UserComponents
-                                            name="Shopia Williams"
-                                            content="Apex"
-                                        />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                            <p><IoIosTime /></p>
-                                            <span className='text-xs'>12m</span>
-                                        </div>
-                                    </div>
-                                    <div className='flex justify-between items-center'>
-                                        <UserComponents
-                                            name="Emma Wright"
-                                            content="Pulse"
-                                        />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
-                                            <p><IoIosTime /></p>
-                                            <span className='text-xs'>8m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </CardBody>
-                        </Card>
-                    </div>
-                </div>
-                <div className='sm:w-[50%]'>
-                    <div className='mb-5'>
+                    <div className='w-[100%] sm:w-[50%]'>
                         <Card>
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>
@@ -264,7 +197,74 @@ const MiddlePage = () => {
                             </CardBody>
                         </Card>
                     </div>
-                    <div>
+                </div>
+                <div className='flex flex-col justify-between items-center sm:flex-row gap-4'>
+                    <div className='w-[100%] sm:w-[50%]'>
+                        <Card>
+                            <CardHeader className='flex justify-between'>
+                                <div className='flex justify-center items-center gap-2'>
+                                    <MdComputer />
+                                    <SpanComponents
+                                        content='Status Tracker'
+                                    />
+                                </div>
+                                <ButtonComponents
+                                    content="See All"
+                                />
+                            </CardHeader>
+                            <Divider />
+                            <CardBody>
+                                <h2 className='font-bold text-gray2 text-xs py-1'>Absent</h2>
+                                <div className='flex justify-between items-center'>
+                                    <UserComponents
+                                        name="James Brown"
+                                        content="Replaced by Laura Peraz"
+                                    />
+                                    <div className='flex items-center justify-between gap-1 bg-gray4 text-sm px-2 py-1 rounded-md font-bold'>
+                                        <p><FaMinusCircle /></p>
+                                        <span className='text-xs'>Absent</span>
+                                    </div>
+                                </div>
+                            </CardBody>
+                            <Divider />
+                            <CardBody>
+                                <h2 className='font-bold text-gray2 text-xs pb-2'>Away</h2>
+                                <div className='flex flex-col gap-4 text-xs'>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="Arthur Taylor"
+                                            content="Synergy"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>25m</span>
+                                        </div>
+                                    </div>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="Shopia Williams"
+                                            content="Apex"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>12m</span>
+                                        </div>
+                                    </div>
+                                    <div className='flex justify-between items-center'>
+                                        <UserComponents
+                                            name="Emma Wright"
+                                            content="Pulse"
+                                        />
+                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                            <p><IoIosTime /></p>
+                                            <span className='text-xs'>8m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className='w-[100%] sm:w-[50%]'>
                         <Card>
                             <CardHeader className='flex justify-between'>
                                 <div className='flex justify-center items-center gap-2'>

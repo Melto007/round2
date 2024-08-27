@@ -11,7 +11,7 @@ function App() {
             <LeftPage />
           </div>
           {/* Middle Page */}
-          <div className='w-full px-4 py-8'>
+          <div className='w-full py-8'>
             <MiddlePage />
           </div>
           {/* Right Page */}
