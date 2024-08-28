@@ -7,7 +7,12 @@ const UserComponents = (props) => {
     return (
         <div>
             <User
-                name={props.name}
+                name={
+                    <div className="flex items-center">
+                        {props.name}
+                        {props.icon && <span className="ml-1 text-skyblue">{props.icon}</span>}
+                    </div>
+                }
                 description={(
                     <Link href='/' size="sm" isExternal className='text-xs font-bold text-gray-500'>
                         {props.content}

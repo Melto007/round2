@@ -29,7 +29,8 @@ export default {
       'lime': '#84cc16',
       'rose': '#fda4af',
       'purple2': '#aca7fc',
-      'purple3': '#e5e4f7'
+      'purple3': '#e5e4f7',
+      'skyblue': '#0791fa'
     },
     extend: {},
   },

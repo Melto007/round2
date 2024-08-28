@@ -40,7 +40,7 @@ const Cards = (props) => {
                     <p className='text-xs font-semibold'>{props.content}</p>
                     <Button
                         size="sm"
-                        className='bg-transparent border-1 border-black rounded-full text-black font-bold uppercase'
+                        className='bg-transparent border-1 border-black rounded-full text-black font-bold uppercase text-xs'
                     >
                         {props.button}
                     </Button>

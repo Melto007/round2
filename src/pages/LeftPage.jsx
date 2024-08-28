@@ -14,6 +14,7 @@ import { FaRegFaceGrinStars } from "react-icons/fa6"
 import { IoDocumentSharp } from "react-icons/io5"
 import { CiSettings } from "react-icons/ci";
 import { FcSupport } from "react-icons/fc"
+import { PiSealCheckFill } from "react-icons/pi"
 
 import { BsDot } from "react-icons/bs"
 
@@ -24,48 +25,62 @@ const LeftPage = () => {
             id: 1,
             icon: <MdOutlineDashboard />,
             content: 'Dashboard',
+            nav: true,
             class: 'text-black bg-gray5'
         },
         {
             id: 2,
             icon: <CiCalendar />,
             content: 'Calendar',
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 3,
             icon: <MdOutlineTimer />,
             content: 'Time Off',
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 4,
             icon: <GoProjectSymlink />,
             content: 'Projects',
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 5,
             icon: <FaUsers />,
             content: 'Team',
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 6,
             icon: <GrNotes />,
             content: 'Notes',
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 7,
             icon: <FaRegFaceGrinStars />,
-            content: 'Benefits',
+            content:<div>
+                        Benefits
+                        <span
+                            className='uppercase bg-amber text-[0.55rem] px-2 py-[0.2em] rounded-full ml-1'>
+                            New
+                        </span>
+                    </div>,
+            nav: false,
             class: 'text-gray'
         },
         {
             id: 8,
             icon: <IoDocumentSharp />,
             content: 'Documents',
+            nav: false,
             class: 'text-gray'
         }
     ]
@@ -119,7 +134,7 @@ const LeftPage = () => {
                                         <span className={`${item.class && 'text-purple'}`}>{item.icon}</span>
                                         <h2>{item.content}</h2>
                                     </div>
-                                    <MdNavigateNext />
+                                    {item.nav && <MdNavigateNext />}
                                 </div>
                             </a>
                         ))}
@@ -159,7 +174,8 @@ const LeftPage = () => {
                 <div>
                     <div className='flex justify-between items-center'>
                         <UserComponents
-                            name="Melto.SM"
+                            name='Melto.sm'
+                            icon={<PiSealCheckFill />}
                             content="meltosm8@gmail.com"
                         />
                         <MdNavigateNext />
