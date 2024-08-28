@@ -15,6 +15,7 @@ import { IoDocumentSharp } from "react-icons/io5"
 import { CiSettings } from "react-icons/ci";
 import { FcSupport } from "react-icons/fc"
 import { PiSealCheckFill } from "react-icons/pi"
+import { PiCheckerboardBold } from "react-icons/pi";
 
 import { BsDot } from "react-icons/bs"
 
@@ -111,7 +112,7 @@ const LeftPage = () => {
     ]
 
     return (
-        <div className='flex flex-col justify-between h-[100vh] px-2 border-r-1 border-gray3'>
+        <div className='flex flex-col justify-between max-h-[100vh] px-2 border-r-1 border-gray3'>
             <div className='flex-2 h-[100vh]'>
                 <div className='flex justify-between items-center'>
                     <UserComponents
@@ -146,11 +147,11 @@ const LeftPage = () => {
                             <a href='/' key={index}>
                                 <div className='flex justify-between items-center py-1 rounded-lg font-bold text-gray text-md'>
                                     <div className='flex items-center justify-center'>
-                                        <span className={`text-4xl p-0 ${item.color}`}>{item.icon}</span>
-                                        <h6 className='text-sm'>{item.name}</h6>
+                                        <span className={`text-3xl p-0 ${item.color}`}>{item.icon}</span>
+                                        <h6 className='text-[0.8rem]'>{item.name}</h6>
                                     </div>
-                                    <button className='border-1 border-gray px-2 py-1 rounded-lg text-xs'>
-                                        {item.count}
+                                    <button className='border-1 border-gray px-2 py-1 rounded-lg text-xs flex items-center'>
+                                        <PiCheckerboardBold /> {item.count}
                                     </button>
                                 </div>
                             </a>
