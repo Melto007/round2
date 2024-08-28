@@ -147,7 +147,7 @@ const LeftPage = () => {
                             <a href='/' key={index}>
                                 <div className='flex justify-between items-center py-1 rounded-lg font-bold text-gray text-md'>
                                     <div className='flex items-center justify-center'>
-                                        <span className={`text-3xl p-0 ${item.color}`}>{item.icon}</span>
+                                        <span className={`text-4xl p-0 ${item.color}`}>{item.icon}</span>
                                         <h6 className='text-[0.8rem]'>{item.name}</h6>
                                     </div>
                                     <button className='border-1 border-gray px-2 py-1 rounded-lg text-xs flex items-center'>
