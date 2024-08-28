@@ -8,13 +8,10 @@ import {
     CardHeader,
     AvatarGroup,
     Avatar,
-    Button,
-    User,
-    Link,
     Divider
 } from '@nextui-org/react'
 import { IoMdTime, IoIosTime, IoMdCloseCircle  } from "react-icons/io"
-import { FaCheckCircle, FaMinusCircle, FaPencilAlt } from "react-icons/fa"
+import { FaCheckCircle, FaMinusCircle, FaPencilAlt, FaRegCircle } from "react-icons/fa"
 import { MdComputer, MdAutoGraph } from "react-icons/md"
 import { RiFlashlightLine } from "react-icons/ri"
 import { CiCalendar } from "react-icons/ci";
@@ -27,9 +24,6 @@ import {
     Legend
 } from 'chart.js'
 
-import {
-    Doughnut
-} from 'react-chartjs-2'
 import SpanComponents from '../components/SpanComponents'
 import ButtonComponents from '../components/ButtonComponents'
 import TimeOffComponents from '../components/TimeOffComponents'
@@ -291,7 +285,7 @@ const MiddlePage = () => {
                                     day="Today"
                                     todo="To-do"
                                     date="Aug 02"
-                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    icon={<FaRegCircle className='text-lg' />}
                                     calendarIcon={<CiCalendar />}
                                 />
                                 <Divider />
@@ -301,8 +295,9 @@ const MiddlePage = () => {
                                     day="Today"
                                     todo="To-do"
                                     date="Aug 02"
-                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    icon={<FaCheckCircle className='text-lime text-lg' />}
                                     calendarIcon={<CiCalendar />}
+                                    disabled='true'
                                 />
                                 <Divider />
                                 <NotesComponents
@@ -311,8 +306,9 @@ const MiddlePage = () => {
                                     day="Today"
                                     todo="To-do"
                                     date="Aug 02"
-                                    icon={<FaCheckCircle className='text-lime text-xl' />}
+                                    icon={<FaCheckCircle className='text-lime text-lg' />}
                                     calendarIcon={<CiCalendar />}
+                                    disabled='true'
                                 />
                             </CardBody>
                         </Card>

@@ -26,7 +26,7 @@ export default {
       'green': '#b7f7f7',
       'green2': '#faffff',
       'amber': '#fab89b',
-      'lime': '#84cc16',
+      'lime': '#02e320',
       'rose': '#fda4af',
       'purple2': '#aca7fc',
       'purple3': '#e5e4f7',
