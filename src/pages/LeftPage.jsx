@@ -1,6 +1,7 @@
 import React from 'react'
 import {
-    Divider
+    Divider,
+    Card
 } from '@nextui-org/react'
 import UserComponents from '../components/UserComponents'
 import { IoMdArrowDropdown } from "react-icons/io"
@@ -94,7 +95,7 @@ const LeftPage = () => {
         }
     ]
     return (
-        <div className='flex flex-col justify-between h-[100vh]'>
+        <div className='flex flex-col justify-between h-[100vh] px-2 border-r-1 border-gray3'>
             <div className='flex-2 h-[100vh]'>
                 <div className='flex justify-between items-center'>
                     <UserComponents

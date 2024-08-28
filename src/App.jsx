@@ -12,11 +12,11 @@ function App() {
               <LeftPage />
             </div>
             {/* Middle Page */}
-            <div className='w-full sm:w-full sm:px-8 py-8 md:px-0'>
+            <div className='px-4 w-full sm:px-12 py-8 lg:px-8 xl:px-0'>
               <MiddlePage />
             </div>
             {/* Right Page */}
-            <div className='2-full sm:w-[30%] bg-pink-600 px-4 py-8 hidden xl:flex'>
+            <div className='w-full sm:w-[30%] bg-pink-600 px-4 py-8 hidden xl:flex'>
               <RightPage />
             </div>
           </div>
