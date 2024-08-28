@@ -65,6 +65,7 @@ const MiddlePage = () => {
                 <UserComponents
                     name="Melto.SM"
                     content="Welcome back to Synergy"
+                    emoji="message"
                 />
                 <div className='flex gap-2 text-xl'>
                     <CiSearch />
@@ -218,7 +219,9 @@ const MiddlePage = () => {
                                 <div className='flex justify-between items-center'>
                                     <UserComponents
                                         name="James Brown"
-                                        content="Replaced by Laura Peraz"
+                                        content="Replaced by"
+                                        text="Laura Peraz"
+                                        emoji="brain"
                                     />
                                     <div className='flex items-center justify-between gap-1 bg-gray4 text-sm px-2 py-1 rounded-md font-bold'>
                                         <p><FaMinusCircle /></p>
@@ -234,6 +237,7 @@ const MiddlePage = () => {
                                         <UserComponents
                                             name="Arthur Taylor"
                                             content="Synergy"
+                                            emoji="cup"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
@@ -244,6 +248,7 @@ const MiddlePage = () => {
                                         <UserComponents
                                             name="Shopia Williams"
                                             content="Apex"
+                                            emoji="burger"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
@@ -254,6 +259,7 @@ const MiddlePage = () => {
                                         <UserComponents
                                             name="Emma Wright"
                                             content="Pulse"
+                                            emoji="tea"
                                         />
                                         <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
