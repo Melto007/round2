@@ -5,18 +5,18 @@ import MiddlePage from './pages/MiddlePage'
 function App() {
   return (
     <>
-      <div className='m-auto p-auto max-w-[1240px]'>
+      <div className='m-auto p-auto max-w-[1240px] box-border'>
           {/* Left Page */}
-          <div className='w-full flex'>
-            <div className="w-full sm:w-[20%] px-4 py-8 hidden md:flex">
+          <div className='md:flex'>
+            <div className="hidden md:block px-2 py-2">
               <LeftPage />
             </div>
             {/* Middle Page */}
-            <div className='px-4 w-full sm:px-12 py-8 lg:px-8 xl:px-0'>
+            <div className='px-2 py-2 md:w-full'>
               <MiddlePage />
             </div>
             {/* Right Page */}
-            <div className='w-full sm:w-[30%] bg-pink-600 px-4 py-8 hidden xl:flex'>
+            <div className='hidden px-2 py-2 xl:block'>
               <RightPage />
             </div>
           </div>

@@ -44,7 +44,7 @@ const RightPage = () => {
                     </CardHeader>
                     <CardBody>
                         <div className='mb-1 flex flex-col gap-3'>
-                            <div className='flex justify-between items-center bg-gray4 rounded-md'>
+                            <div className='flex justify-between items-center bg-gray5 rounded-full'>
                                 <Button
                                     className='bg-white border-1 border-gray2 rounded-full'
                                     isIconOnly

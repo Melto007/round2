@@ -24,7 +24,7 @@ const LeftPage = () => {
             id: 1,
             icon: <MdOutlineDashboard />,
             content: 'Dashboard',
-            class: 'text-black bg-gray3'
+            class: 'text-black bg-gray5'
         },
         {
             id: 2,

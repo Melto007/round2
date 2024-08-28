@@ -142,12 +142,12 @@ const MiddlePage = () => {
                             <CardBody>
                                 <div className='mb-1'>
                                     <h2 className='font-bold text-gray2 text-xs pb-2'>Project Name</h2>
-                                    <div className='flex items-center text-sm gap-2 font-bold'>
+                                    <div className='flex items-center text-sm gap-3 font-bold'>
                                         <div className='flex items-center gap-1'>
                                             <MdAutoGraph />
                                             <p className="font-semibold">Monday App Design</p>
                                         </div>
-                                        <div className='flex justify-center items-center bg-orange2 px-2 py-1 rounded-full'>
+                                        <div className='flex justify-center items-center gap-1 bg-orange2 px-2 py-1 rounded-full'>
                                             <IoIosTime />
                                             <p className='text-gray text-xs font-semibold'>In Progress</p>
                                         </div>
@@ -235,7 +235,7 @@ const MiddlePage = () => {
                                             name="Arthur Taylor"
                                             content="Synergy"
                                         />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                        <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
                                             <span className='text-xs'>25m</span>
                                         </div>
@@ -245,7 +245,7 @@ const MiddlePage = () => {
                                             name="Shopia Williams"
                                             content="Apex"
                                         />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                        <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
                                             <span className='text-xs'>12m</span>
                                         </div>
@@ -255,7 +255,7 @@ const MiddlePage = () => {
                                             name="Emma Wright"
                                             content="Pulse"
                                         />
-                                        <div className='flex items-center justify-between gap-1 bg-rose text-sm px-2 py-1 rounded-md font-bold'>
+                                        <div className='flex items-center justify-between gap-1 bg-red2 text-sm px-2 py-1 rounded-md font-bold'>
                                             <p><IoIosTime /></p>
                                             <span className='text-xs'>8m</span>
                                         </div>
