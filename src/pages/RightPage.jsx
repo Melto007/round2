@@ -103,7 +103,7 @@ const RightPage = () => {
                         </div>
                     </CardHeader>
                     <CardBody>
-                        <div className='mb-1 flex flex-col gap-3'>
+                        <div className='flex flex-col gap-3'>
                             <div className='flex justify-between items-center bg-gray5 rounded-full w-full'>
                                 <Button
                                     className='bg-white border-1 border-gray2 rounded-full'
@@ -134,7 +134,7 @@ const RightPage = () => {
                                     startContent={<MdKeyboardArrowRight className='text-2xl' />}
                                 ></Button>
                             </div>
-                            <div className='flex justify-center items-center'>
+                            <div className='flex justify-center items-center py-1'>
                                 <Button
                                     className='bg-white border-1 border-gray2 rounded-full'
                                     isIconOnly
